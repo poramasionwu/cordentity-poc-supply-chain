@@ -1,5 +1,5 @@
 ---
-- hosts: all:!localhost
+- hosts: all:!0.0.0.0
   gather_facts: false
   any_errors_fatal: true
   roles:

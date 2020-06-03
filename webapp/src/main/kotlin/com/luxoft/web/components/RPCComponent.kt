@@ -29,7 +29,7 @@ import org.springframework.stereotype.Component
 class RPCComponent {
 
     @Value("\${node.address}")
-    private var nodeAddress: String = "localhost"
+    private var nodeAddress: String = "0.0.0.0"
 
     @Value("\${node.rpcPort}")
     private var nodeRPCPort: Int = 10002
