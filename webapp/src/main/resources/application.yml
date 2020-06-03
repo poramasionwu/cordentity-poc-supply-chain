@@ -4,7 +4,7 @@ spring:
 server:
   port: 8081
 node:
-  address: localhost
+  address: 0.0.0.0
   rpcPort: 10002
   rpcUser: user1
   rpcPassword: test
@@ -16,7 +16,7 @@ spring:
 server:
   port: 8082
 node:
-  address: localhost
+  address: 0.0.0.0
   rpcPort: 10102
   rpcUser: user1
   rpcPassword: test
