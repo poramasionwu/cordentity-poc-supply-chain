@@ -23,7 +23,7 @@ task deployNodes(type: net.corda.plugins.Cordform, group: RUN_CORDA_GROUP) {
         notary = [validating: false]
         p2pPort 10701
         rpcSettings {
-            address("localhost:10702")
+            address("0.0.0.0:10702")
             adminAddress("localhost:10703")
         }
         cordapps = ["com.luxoft.poc.supplychain:cordapp:0.1"]
@@ -34,7 +34,7 @@ task deployNodes(type: net.corda.plugins.Cordform, group: RUN_CORDA_GROUP) {
         name "O=PharmaOne,L=London,C=GB"
         p2pPort 10001
         rpcSettings {
-            address("localhost:10002")
+            address("0.0.0.0:10002")
             adminAddress("localhost:10003")
         }
         cordapps = ["com.luxoft.poc.supplychain:cordapp:0.1"]
@@ -45,7 +45,7 @@ task deployNodes(type: net.corda.plugins.Cordform, group: RUN_CORDA_GROUP) {
         name "O=SEEHOF,L=Zurich,C=CH"
         p2pPort 10101
         rpcSettings {
-            address("localhost:10102")
+            address("0.0.0.0:10102")
             adminAddress("localhost:10103")
         }
         cordapps = ["com.luxoft.poc.supplychain:cordapp:0.1"]
