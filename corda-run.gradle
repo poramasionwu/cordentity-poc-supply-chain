@@ -23,8 +23,8 @@ task deployNodes(type: net.corda.plugins.Cordform, group: RUN_CORDA_GROUP) {
         notary = [validating: false]
         p2pPort 10701
         rpcSettings {
-            address("localhost:10702")
-            adminAddress("localhost:10703")
+            address("0.0.0.0:10702")
+            adminAddress("0.0.0.0:10703")
         }
         cordapps = ["com.luxoft.poc.supplychain:cordapp:0.1"]
         rpcUsers = [[user: "user1", "password": "test", "permissions": ["ALL"]]]
