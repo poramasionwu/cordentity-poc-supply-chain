@@ -38,6 +38,6 @@ WORKDIR /opt/corda
 
 # Start it
 ENTRYPOINT ["/usr/bin/java"]
-CMD ["-Xmx1024m", \
+CMD ["-Xmx8192m", \
      "-jar", \
      "corda.jar"]
