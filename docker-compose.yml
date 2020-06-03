@@ -136,4 +136,4 @@ services:
       - agent94
       - agent95
       - agent96
-    command: sh -c 'sleep 10; /usr/bin/wget --spider http://0.0.0.0:8094/; /usr/bin/wget --spider http://0.0.0.0:8095/; /usr/bin/wget --spider http://0.0.0.0:8096/'
+    command: sh -c 'sleep 10; /usr/bin/wget --spider http://localhost:8094/; /usr/bin/wget --spider http://localhost:8095/; /usr/bin/wget --spider http://localhost:8096/'

@@ -1,5 +1,5 @@
 ---
-- hosts: 0.0.0.0
+- hosts: localhost
   remote_user: root
   roles:
     - stub

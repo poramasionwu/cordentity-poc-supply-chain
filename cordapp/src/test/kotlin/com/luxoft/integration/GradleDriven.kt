@@ -61,7 +61,7 @@ class GradleDriven: e2eBase {
 
         val user = User("user1", "test", permissions = setOf())
 
-        val host = "0.0.0.0"
+        val host = "localhost"
 
         val agent = CordaRPCClient(NetworkHostAndPort(host, 10202))
                 .start(user.username, user.password).proxy
